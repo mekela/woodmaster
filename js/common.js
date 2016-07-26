@@ -10,4 +10,7 @@ $(document).ready(function() {
 	
 	//bxslider
 	$('.reviews_slider ul').bxSlider();
+
+	//tel
+	$("[type='tel'").mask("+7 (999) 999-9999");
 });
