@@ -1691,11 +1691,41 @@ select:hover, select:focus { color: #fff; background: #45bcea url(../img/icons/s
 /*----------map-------------*/
 .map { filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); filter: gray; -webkit-filter: grayscale(100%); filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1); -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(grayScale=1)"; }
 
-.map iframe { width: 100%; height: 520px; frame-border: 0; }
+.map iframe { width: 100%; height: 520px; frame-border: 0; display: block; }
 
 /*----------end-map-------------*/
 /*----------end main----------*/
 /*----------footer----------*/
-.footer { position: relative; overflow: hidden; padding: 40px 0; }
+.footer { position: relative; overflow: hidden; }
+
+.footer_top { background: #f9f9f9; padding: 40px 0; }
+
+.footer_top .logo { color: #666666; margin-top: 0; padding-top: 0; }
+
+.footer_top .location { float: none; border-color: #999999; color: #7f7f7f; margin-bottom: 19px; }
+
+.footer_top .location i { border-color: #999999; }
+
+.footer_top .location a { border-color: #999999; }
+
+.footer_top .head_menu { text-align: left; font-size: 0; padding-top: 40px; }
+
+.footer_top .head_menu li { width: 33%; }
+
+.footer_top .head_menu li a { color: #666666; }
+
+.footer_top section { font-size: 14px; color: #999999; font-weight: 300; line-height: 20px; padding-top: 5px; }
+
+.footer_top section h4 { font-size: 24px; color: #666666; font-weight: 300; padding-bottom: 11px; }
+
+.red_foot { background: #ef8989; box-sizing: border-box; padding: 18px 7px; color: #ffffff; font-size: 18px; }
+
+.red_foot a { display: block; text-decoration: none; }
+
+.red_foot a:first-child { margin-bottom: 14px; }
+
+.footer_bottom { background: #cccccc; padding: 7px 0; color: #999999; font-size: 16px; vertical-align: middle; }
+
+.footer_bottom img { vertical-align: middle; padding: 0 0 0 7px; }
 
 /*----------end footer----------*/
