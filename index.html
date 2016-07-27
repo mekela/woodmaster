@@ -166,166 +166,202 @@
 					<div class="took_select">
 						<div>
 							<label>Стиль:</label>
-							<select>
-								<option>Выберите стиль</option>
-								<option>Выберите стиль</option>
-								<option>Выберите стиль</option>
-								<option>Выберите стиль</option>
+							<select data-filter="disaster">
+								<option value="">Выберите стиль</option>
+								<option>Стиль1</option>
+								<option>Стиль2</option>
+								<option>Стиль3</option>
 							</select>
 						</div>
 						<div>
 							<label>Цвет:</label>
-							<select>
-								<option>Выберите цвет</option>
-								<option>Выберите стиль Выб</option>
-								<option>Выберите стиль</option>
-								<option>Выберите стиль</option>
+							<select data-filter="meal-type">
+								<option value="">Выберите цвет</option>
+								<option>Красный</option>
+								<option>Синий</option>
+								<option>Голубой</option>
 							</select>
 						</div>
 						<div>
 							<label>Материал:</label>
-							<select>
-								<option>Выберите материал</option>
-								<option>Выберите Выберитеnfn</option>
-								<option>Выберите стиль</option>
-								<option>Выберите стиль</option>
+							<select data-filter="ingredient">
+								<option value="">Выберите материал</option>
+								<option>Дуб</option>
+								<option>Бук</option>
+								<option>Сосна</option>
 							</select>
 						</div>
 						<div>
 							<label>Ценовая категория:</label>
-							<select>
-								<option>Выберите ценовую категорию</option>
-								<option>Выберите стиль</option>
-								<option>Выберите стиль</option>
-								<option>Выберите стиль</option>
+							<select data-filter="pricecat">
+								<option value="">Выберите ценовую категорию</option>
+								<option>Дорого</option>
+								<option>Дешево</option>
 							</select>
 						</div>
 					</div>
 					<div class="took_title"><em>02.</em> Посмотрите подходящие для Вас варианты кухни</div>
 					<div class="took_products">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="took_product">
-									<figure>
-										<img src="img/took_img.jpg" alt="">
-										<figcaption>Кухня фаворит олд стайл 1</figcaption>
-									</figure>
-									<div>
-										<em>Самая стильная</em>
-										<span>Цена: <small>20 000 ₽</small></span>
-										<a href="#kitchen" class="fancybox button">Смотреть кухню</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="took_product">
-									<figure>
-										<img src="img/took_img.jpg" alt="">
-										<figcaption>Кухня фаворит олд стайл 1</figcaption>
-									</figure>
-									<div>
-										<em>Самая стильная</em>
-										<span>Цена: <small>20 000 ₽</small></span>
-										<a href="#" class="button">Смотреть кухню</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="took_product">
-									<figure>
-										<img src="img/took_img.jpg" alt="">
-										<figcaption>Кухня фаворит олд стайл 1</figcaption>
-									</figure>
-									<div>
-										<em>Самая стильная</em>
-										<span>Цена: <small>20 000 ₽</small></span>
-										<a href="#" class="button">Смотреть кухню</a>
-									</div>
-								</div>
+						
+						<div class="took_product"
+							data-disaster="Стиль1"  
+						    data-meal-type="Красный"  
+						    data-ingredient="Дуб" 
+						    data-pricecat="Дорого" 
+						>
+							<figure>
+								<img src="img/took_img.jpg" alt="">
+								<figcaption>Кухня фаворит олд стайл 1</figcaption>
+							</figure>
+							<div>
+								<em>Самая стильная</em>
+								<span>Цена: <small>20 000 ₽</small></span>
+								<a href="#kitchen" class="fancybox button">Смотреть кухню</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-4">
-								<div class="took_product">
-									<figure>
-										<img src="img/took_img.jpg" alt="">
-										<figcaption>Кухня фаворит олд стайл 1</figcaption>
-									</figure>
-									<div>
-										<em>Самая стильная</em>
-										<span>Цена: <small>20 000 ₽</small></span>
-										<a href="#" class="button">Смотреть кухню</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="took_product">
-									<figure>
-										<img src="img/took_img.jpg" alt="">
-										<figcaption>Кухня фаворит олд стайл 1</figcaption>
-									</figure>
-									<div>
-										<em>Самая стильная</em>
-										<span>Цена: <small>20 000 ₽</small></span>
-										<a href="#" class="button">Смотреть кухню</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="took_product">
-									<figure>
-										<img src="img/took_img.jpg" alt="">
-										<figcaption>Кухня фаворит олд стайл 1</figcaption>
-									</figure>
-									<div>
-										<em>Самая стильная</em>
-										<span>Цена: <small>20 000 ₽</small></span>
-										<a href="#" class="button">Смотреть кухню</a>
-									</div>
-								</div>
+					
+					
+						<div class="took_product"
+							data-disaster="Стиль3"  
+						    data-meal-type="Синий"  
+						    data-ingredient="Бук" 
+						    data-pricecat="Дешево" 
+						>
+							<figure>
+								<img src="img/took_img.jpg" alt="">
+								<figcaption>Кухня фаворит олд стайл 1</figcaption>
+							</figure>
+							<div>
+								<em>Самая стильная</em>
+								<span>Цена: <small>20 000 ₽</small></span>
+								<a href="#" class="button">Смотреть кухню</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-4">
-								<div class="took_product">
-									<figure>
-										<img src="img/took_img.jpg" alt="">
-										<figcaption>Кухня фаворит олд стайл 1</figcaption>
-									</figure>
-									<div>
-										<em>Самая стильная</em>
-										<span>Цена: <small>20 000 ₽</small></span>
-										<a href="#" class="button">Смотреть кухню</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="took_product">
-									<figure>
-										<img src="img/took_img.jpg" alt="">
-										<figcaption>Кухня фаворит олд стайл 1</figcaption>
-									</figure>
-									<div>
-										<em>Самая стильная</em>
-										<span>Цена: <small>20 000 ₽</small></span>
-										<a href="#" class="button">Смотреть кухню</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="took_product">
-									<figure>
-										<img src="img/took_img.jpg" alt="">
-										<figcaption>Кухня фаворит олд стайл 1</figcaption>
-									</figure>
-									<div>
-										<em>Самая стильная</em>
-										<span>Цена: <small>20 000 ₽</small></span>
-										<a href="#" class="button">Смотреть кухню</a>
-									</div>
-								</div>
+					
+						<div class="took_product"
+							data-disaster="Стиль3"  
+						    data-meal-type="Голубой"  
+						    data-ingredient="Сосна" 
+						    data-pricecat="Дешево" 
+						>
+							<figure>
+								<img src="img/took_img.jpg" alt="">
+								<figcaption>Кухня фаворит олд стайл 1</figcaption>
+							</figure>
+							<div>
+								<em>Самая стильная</em>
+								<span>Цена: <small>20 000 ₽</small></span>
+								<a href="#" class="button">Смотреть кухню</a>
 							</div>
 						</div>
+
+						<div class="took_product"
+							data-disaster="Стиль1"  
+						    data-meal-type="Красный"  
+						    data-ingredient="Дуб" 
+						    data-pricecat="Дорого" 
+						>
+							<figure>
+								<img src="img/took_img.jpg" alt="">
+								<figcaption>Кухня фаворит олд стайл 1</figcaption>
+							</figure>
+							<div>
+								<em>Самая стильная</em>
+								<span>Цена: <small>20 000 ₽</small></span>
+								<a href="#kitchen" class="fancybox button">Смотреть кухню</a>
+							</div>
+						</div>
+					
+					
+						<div class="took_product"
+							data-disaster="Стиль3"  
+						    data-meal-type="Синий"  
+						    data-ingredient="Бук" 
+						    data-pricecat="Дешево" 
+						>
+							<figure>
+								<img src="img/took_img.jpg" alt="">
+								<figcaption>Кухня фаворит олд стайл 1</figcaption>
+							</figure>
+							<div>
+								<em>Самая стильная</em>
+								<span>Цена: <small>20 000 ₽</small></span>
+								<a href="#" class="button">Смотреть кухню</a>
+							</div>
+						</div>
+					
+						<div class="took_product"
+							data-disaster="Стиль3"  
+						    data-meal-type="Голубой"  
+						    data-ingredient="Сосна" 
+						    data-pricecat="Дешево" 
+						>
+							<figure>
+								<img src="img/took_img.jpg" alt="">
+								<figcaption>Кухня фаворит олд стайл 1</figcaption>
+							</figure>
+							<div>
+								<em>Самая стильная</em>
+								<span>Цена: <small>20 000 ₽</small></span>
+								<a href="#" class="button">Смотреть кухню</a>
+							</div>
+						</div>
+
+						<div class="took_product"
+							data-disaster="Стиль1"  
+						    data-meal-type="Красный"  
+						    data-ingredient="Дуб" 
+						    data-pricecat="Дешево" 
+						>
+							<figure>
+								<img src="img/took_img.jpg" alt="">
+								<figcaption>Кухня фаворит олд стайл 1</figcaption>
+							</figure>
+							<div>
+								<em>Самая стильная</em>
+								<span>Цена: <small>20 000 ₽</small></span>
+								<a href="#kitchen" class="fancybox button">Смотреть кухню</a>
+							</div>
+						</div>
+					
+					
+						<div class="took_product"
+							data-disaster="Стиль3"  
+						    data-meal-type="Синий"  
+						    data-ingredient="Бук" 
+						    data-pricecat="Дешево" 
+						>
+							<figure>
+								<img src="img/took_img.jpg" alt="">
+								<figcaption>Кухня фаворит олд стайл 1</figcaption>
+							</figure>
+							<div>
+								<em>Самая стильная</em>
+								<span>Цена: <small>20 000 ₽</small></span>
+								<a href="#" class="button">Смотреть кухню</a>
+							</div>
+						</div>
+					
+						<div class="took_product"
+							data-disaster="Стиль3"  
+						    data-meal-type="Голубой"  
+						    data-ingredient="Сосна" 
+						    data-pricecat="Дешево" 
+						>
+							<figure>
+								<img src="img/took_img.jpg" alt="">
+								<figcaption>Кухня фаворит олд стайл 1</figcaption>
+							</figure>
+							<div>
+								<em>Самая стильная</em>
+								<span>Цена: <small>20 000 ₽</small></span>
+								<a href="#" class="button">Смотреть кухню</a>
+							</div>
+						</div>
+								
+							
+						
+						
 						<div class="row">
 							<div class="col-md-12 text-center">
 								<a href="#" class="btn btn-default look_more">Смотреть ещё кухни +</a>

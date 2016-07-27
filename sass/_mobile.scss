@@ -38,6 +38,16 @@
   }
 }
 
+@include mq($max-width: 1024px) {
+	.active_buttons a.add_star:before{
+		display: none;
+	}
+	.map{
+		iframe{
+			pointer-events: none !important;
+		}
+	}
+}
 @include mq($max-width: 991px) {
 	.head_menu li{
 		padding: 0 0 0 15px;
