@@ -29,16 +29,20 @@
 		<!-- END OF SCRIPT -->
 	</head>
 <body>
-<div class="wrapper">
+<div class="wrapper" id="wrapper">
 <!--header-->
 <header class="header">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3  col-sm-3 col-xs-6 ">
 				<a href="/" class="logo">Woodmaster</a>
+				<span class="logo_drop"></span>
 			</div>
 			<div class="col-md-9 col-sm-9 col-xs-6 ">
 				<nav class="head_menu">
+					<div class="menu_trigger">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
 					<ul>
 						<li><a href="#" class="active">Кухни</a></li>
 						<li><a href="#">Спальни</a></li>
@@ -96,8 +100,8 @@
 				</div>
 			</div>
 			<div class="active_buttons">
-				<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
-				<a href="#">?</a>
+				<a href="#" class="add_star"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+				<a href="#designer" class="fancybox">?</a>
 			</div>
 		</div>
 	</div>
@@ -209,7 +213,7 @@
 									<div>
 										<em>Самая стильная</em>
 										<span>Цена: <small>20 000 ₽</small></span>
-										<a href="#" class="button">Смотреть кухню</a>
+										<a href="#kitchen" class="fancybox button">Смотреть кухню</a>
 									</div>
 								</div>
 							</div>
@@ -347,7 +351,7 @@
 								рядом кухонь
 								«Woodmaster»
 							</div>
-							<a href="#" class="button">Скачать каталог</a>
+							<a href="#catalog" class="fancybox button">Скачать каталог</a>
 						</div>
 					</div>
 				</div>
@@ -637,8 +641,92 @@
 			</div>
 		</div>
 	</div>
+	<a href="#wrapper" class="totop"><img src="img/totop.png" alt=""></a>
 </footer>
 <!--end-footer-->
+
+<!--modal-->
+<div class="modal_box modal_designer" id="designer">
+	<div class="modal_inner">
+		<div class="title">Задайте Ваш вопрос, введите
+		контактные данные и дизайнер
+		ответит на него в течение 10 минут</div>
+		<div class="modal_designer_form">
+			<form action="#">
+				<div class="float_left">
+					<textarea placeholder="Ваш вопрос:"></textarea>
+				</div>
+				<div class="float_right">
+					<div><input type="text" placeholder="Введите е-mail:"></div>
+					<div><input type="tel" placeholder="Введите телефон"></div>
+					<div><input type="submit" value="Задать вопрос" class="button"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal_box modal_catalog" id="catalog">
+	<div class="modal_inner">
+		<div class="title">Введите Ваши контактные данные и каталог придет на почту в течение 10 минут</div>
+		<div class="modal_designer_form">
+			<form action="#">
+				<div class="text-center">
+					<div><input type="text" placeholder="Введите е-mail:"></div>
+					<div><input type="tel" placeholder="Введите телефон"></div>
+					<div><input type="submit" value="Получить каталог" class="button"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal_box modal_kitchen" id="kitchen">
+	<div class="modal_kitchen_inner">
+		<figure class="float_left">
+			<a href="img/kitchen_big.jpg" data-fancybox-group="kitchen" class="fancybox"><img src="img/kitchen_big.jpg" alt=""></a>
+			<figcaption>
+				<a href="img/kitchen_big.jpg" data-fancybox-group="kitchen" class="fancybox"><img src="img/kitchen_small.jpg" alt=""></a>
+				<a href="img/kitchen_big.jpg" data-fancybox-group="kitchen" class="fancybox"><img src="img/kitchen_small.jpg" alt=""></a>
+				<a href="img/kitchen_big.jpg" data-fancybox-group="kitchen" class="fancybox"><img src="img/kitchen_small.jpg" alt=""></a>
+			</figcaption>
+		</figure>
+		<article>
+			<h3>Кухня 1</h3>
+			<ul>
+				<li><strong>Цвет:</strong> Синий</li>
+				<li><strong>Размеры:</strong> 2400 x 4600 мм</li>
+				<li><strong>Стиль:</strong> Классический</li>
+				<li><strong>Материал:</strong> Массив ольхи</li>
+				<li><strong>Столешница:</strong> Кварцевый камень</li>
+				<li><strong>Фурнитура:</strong> Выдвижные механизмы – тандембоксы Hettich (Германия) – обеспечивают плавный ход и бесшумность закрывания.</li>
+			</ul>
+			<p>В кухонном гарнитуре очень сбалансировано сочетаются два дизайнерских направления: классика и модерновый стиль. Такое необычное совмещение стилистик оформления невероятно удачно сказалось на эстетических особенностях данной кухни.</p>
+			<h6>Стоимость за погонный метр</h6>
+			<em>от 35 098 ₽</em>
+		</article>
+	</div>
+	<div class="modal_kitchen_form">
+		<div class="row">
+			<div class="col-md-4">
+				<section>
+					Уточните все подробности по «Кухне 1»
+					у дизайнера-сметчика и получите расчет
+					кухни по Вашим размерам
+				</section>
+			</div>
+			<div class="col-md-4">
+				<input type="tel" placeholder="Введите телефон">
+			</div>
+			<div class="col-md-4">
+				<input type="submit" class="button" value="Рассчитать стоимость">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--end-modal-->
+
 </div>
 </body>
 </html>

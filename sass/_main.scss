@@ -9,11 +9,27 @@
 	top: 0;
 	left: 0;
 	z-index: 100;
+	 @include transition(all 0.5s);
 	border-bottom: 1px solid rgba(255,255,255, 0.5);
 	.container{
 		height: 54px;
 	}
+	&.fixed_element{
+		background:rgba(255,255,255, 0.9);
+		.logo, .head_menu li, .menu_trigger{
+			color: #666666;
+		}
+		.head_info{
+			display: none;
+		}
+	}
  }
+ 	.logo_drop{
+ 		display: none;
+ 	}
+ 	.menu_trigger{
+ 		display: none;
+ 	}
 	.logo{
 		font-size: 30px;
 		color: #ffffff;
@@ -21,6 +37,7 @@
 		text-decoration: none;
 		display: block;
 		padding: 7px 0 0 0;
+		@include transition(all 0.5s);
 		&:hover, &:focus, &:active{
 		   color: #fff;
 		  }
@@ -33,6 +50,7 @@
 			color: #fff;
 			height: 55px;
 			padding: 0 0 0 30px;
+			@include transition(all 0.5s);
 			a{
 				text-decoration: none;
 				display: block;
@@ -183,6 +201,29 @@
 				margin-bottom: 9px;
 				line-height: 35px;
 				color: #fff;
+				position: relative;
+				@include transition(all 0.5s);
+				&.add_star{
+					&:before{
+						content: 'Добавить в закладки (ctrl+D)';
+						position: absolute;
+						right: 0px;
+						width: 150px;
+						height: 31px;
+						background-color: #45bbe9;
+						opacity: 0;
+						line-height: 30px;
+						font-size: 10px;
+						text-align: center;
+						@include transition(all 0.5s);
+					}	
+					&:hover{
+						&:before{
+							right: 30px;
+							opacity: .9;
+						}
+					}
+				}
 			}
 		}
 	/*---------end-slogan-------------*/
@@ -701,4 +742,147 @@
 			padding: 0 0 0 7px
 		}
 	}
+	.totop{
+		position: fixed;
+		bottom: 5%;
+		right: 5%;
+		z-index: 80;
+	}
 /*----------end footer----------*/
+
+/*----------modal----------*/
+.modal_designer{
+	.modal_inner{
+		width: 621px;
+		padding: 15px 20px;
+	}
+	.modal_designer_form{
+		.float_left, .float_right {
+			width: 50%;
+			padding-bottom: 25px;
+		}
+	}
+}
+.modal_box{
+	.title{
+		font-size: 24px;
+		color: #666666;
+		&:before{
+			display: none;
+		}
+		&:after{
+			content: '';
+			display: block;
+			width: 50px;
+			height: 3px;
+			background-color: #45bcea;
+			margin: 10px 0;
+		}
+	}
+	textarea{
+		border-radius: 4px;
+		width: 275px;
+		height: 180px;
+	}
+	input[type=text], input[type=tel]{
+		width: 275px;
+		margin-bottom: 15px;
+	}
+	.button{
+		width: 275px;
+		background-position: center right 56px;
+	}
+}
+.modal_catalog{
+	padding: 12px 17px;
+	width: 610px;
+	.text-center{
+		padding-bottom: 10px;
+	}
+}
+
+.modal_kitchen{
+	width: 880px;
+	.modal_kitchen_inner{
+		@include povh('');
+		padding-bottom: 9px;
+		.float_left{
+			width: 480px;
+		}
+		article{
+			padding: 12px 17px;
+			@include povh('');
+			font-size: 14px;
+			color: #999999;
+			font-weight: 300;
+			strong{
+				font-weight: normal;
+				color: #666666;
+			}
+			h3{
+				color: #666666;
+				font-size: 24px;
+				&:after{
+					content: '';
+					display: block;
+					width: 50px;
+					height: 3px;
+					background-color: #45bcea;
+					margin: 10px 0;
+				}
+			}
+			ul{
+				padding-bottom: 15px;
+				border-bottom: 1px solid #cccccc;
+				margin-bottom: 13px;
+			}
+			p{
+				padding-bottom: 20px
+			}
+			h6{
+				font-size: 18px;
+				color: #666666;
+				padding-bottom: 8px;
+			}
+			em{
+				display: block;
+				font-style: normal;
+				color: #45bcea;
+				font-size: 24px;
+				font-weight: normal;
+			}
+		}
+		figure{
+			figcaption{
+				padding: 10px 0 0 0;
+				display: flex;
+				justify-content: space-between;
+				a{
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+.modal_kitchen_form{
+	@include povh('');
+	padding: 18px 12px;
+	color: #666666;
+	font-size: 14px;
+	vertical-align: middle;
+	input[type=tel]{
+		position: relative;
+		top: 7px;
+	}
+	input{
+		vertical-align: middle;
+	}
+	.button{
+		background-position: center right 30px;
+		margin: 0 15px 0 0;
+		position: relative;
+		left: -10px;
+	}
+}
+/*----------end-modal----------*/

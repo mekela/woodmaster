@@ -58,9 +58,61 @@
 	.quality_wrap .quality_block figure img{
 		width: 80%;
 	}
+	.modal_kitchen_form{
+		text-align: center;
+	}
+	.modal_kitchen_form{
+		.button{
+			position: static;
+			left: 0;
+			margin: 0;
+		}
+	}	
+
+	.logo_drop{
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 23px;
+			right: -13px;
+			width: 0;
+			height: 0;
+			@include arr(10,10, #fff, b);
+		}
+	}
+	.header{
+		&.fixed_element{
+			.logo_drop{
+				&:before{
+					@include arr(10,10, #666666, b);
+				}
+			}
+		}
+	}
+	.logo_menu{
+		display: none;
+		position: absolute;
+	}
+}
+
+
+@include mq($max-width: 900px) {
+	.modal_kitchen{
+		width: auto;
+	}
 }
 
 @include mq($max-width: 765px) {
+	.totop{
+		display: none;
+	}
 	.why_block figure{
 		width: 50%;
 	}
@@ -111,6 +163,47 @@
 			display: none;
 		}
 	}
+	.modal_kitchen{
+		.modal_kitchen_inner{
+			.float_left{
+				float: none !important;
+				width: 100%;
+				a{
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.logo_drop{
+		&:before{
+			right: auto;
+			left: 200px;
+		}
+	}	
+	.menu_trigger{
+		display: block;
+		font-size: 25px;
+		color: #fff;
+		padding: 10px 0 10px 0;
+	}
+	.head_menu{
+		ul{
+			display: none;
+			position: absolute;
+			right: 0;
+			width: 250px;
+			background:rgba(255,255,255, 0.9);
+			li{
+				display: block;
+				color: #666;
+				padding: 0;
+				text-align: center;
+			}
+		}
+	}
 }
 
 @include mq($max-width: 600px) {
@@ -132,6 +225,21 @@
 			width: 100%;
 			height: auto;
 		}
+	}
+	.modal_designer{
+		.modal_inner{
+			width: auto;
+		}
+		.modal_designer_form{
+			.float_left, .float_right {
+				width: 100%;
+				padding-bottom: 25px;
+				text-align: center;
+			}
+		}
+	}
+	.modal_catalog{
+		width: auto;
 	}
 }
 
@@ -164,6 +272,18 @@
 		width: 100%;
 		text-align: center;
 	}
+	.modal_kitchen{
+		.modal_kitchen_inner{
+			.float_left{
+				figure{
+					figcaption{
+					display: block;	
+					}
+				}
+			}
+		}
+	}
+
 }
 
 @include mq($max-width: 400px) {
@@ -172,6 +292,12 @@
 	}
 	.main_form section form{
 		input{
+			width: 100%;
+			background-image: none;
+		}
+	}
+	.modal_box{
+		input, textarea, .button,  input[type=text],  input[type=tel]{
 			width: 100%;
 			background-image: none;
 		}
