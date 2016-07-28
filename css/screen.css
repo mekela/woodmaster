@@ -1743,7 +1743,9 @@ select:hover, select:focus { color: #fff; background: #45bcea url(../img/icons/s
 
 .footer_bottom img { vertical-align: middle; padding: 0 0 0 7px; }
 
-.totop { position: fixed; bottom: 5%; right: 5%; z-index: 80; }
+.totop { position: fixed; bottom: 5%; right: 5%; z-index: 80; opacity: 0; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.totop.fixed_element { opacity: 1; }
 
 /*----------end footer----------*/
 /*----------modal----------*/

@@ -754,6 +754,11 @@
 		bottom: 5%;
 		right: 5%;
 		z-index: 80;
+		opacity: 0;
+		@include transition(all 0.5s);
+		&.fixed_element{
+			opacity: 1;
+		}
 	}
 /*----------end footer----------*/
 

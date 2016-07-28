@@ -124,8 +124,8 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 600) {
-        $(".header").addClass("fixed_element");
+        $(".header, .totop").addClass("fixed_element");
     } else {
-        $(".header").removeClass("fixed_element");
+        $(".header, .totop").removeClass("fixed_element");
     }
 });
