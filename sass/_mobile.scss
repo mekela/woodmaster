@@ -214,6 +214,12 @@
 			}
 		}
 	}
+	.took_products{
+		.took_product{
+			width: 48%;
+			margin-right: 1%;
+		}
+	}
 }
 
 @include mq($max-width: 600px) {
@@ -254,6 +260,12 @@
 }
 
 @include mq($max-width: 500px) {
+	.took_products{
+		.took_product{
+			width: 100%;
+			margin-right: 0%;
+		}
+	}
 	.slogan, .slogan_tags{
 		width: 100%;
 		text-align: left;

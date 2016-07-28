@@ -334,16 +334,17 @@
 		}
 		.took_products{
 			padding-bottom: 40px;
+				
 			.took_product{
 				background:#f9f9f9;
 				font-size: 18px;
 				color: #999999;
 				padding-bottom: 16px;
 				margin-bottom: 38px;
-				width: 33%;
+				width: calc(33% - 10px);
 				display: inline-block;
 				vertical-align: top;
-				padding-right: 10px;
+				margin-right: 10px;
 				box-sizing: border-box;
 				figure img{
 					width: 100%;
