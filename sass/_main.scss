@@ -121,10 +121,26 @@
 			line-height: 60px;
 			color: #fff;
 			font-size: 18px;
+			@include transition(all 0.5s);
+			position: relative;
 			a{
 				text-decoration: none;
 			}
+			&:hover{
+				.hidden-content{
+					opacity: 1;
+				}
+			}
+			.hidden-content{
+				background:rgba(231,63,63, 0.6);
+				line-height: 30px;
+				@include transition(all 0.5s);
+				position: absolute;
+				font-size: 15px;
+				opacity: 0;
+			}
 		}
+
 /*----------end-header----------*/	
 
 

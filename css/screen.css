@@ -1499,9 +1499,13 @@ select:hover, select:focus { color: #fff; background: #45bcea url(../img/icons/s
 
 .location a { display: inline-block; line-height: 0.8; border-bottom: 1px dashed #fff; font-size: 12px; text-decoration: none; }
 
-.phone { width: 180px; height: 60px; float: right; background: rgba(231, 63, 63, 0.6); text-align: center; line-height: 60px; color: #fff; font-size: 18px; }
+.phone { width: 180px; height: 60px; float: right; background: rgba(231, 63, 63, 0.6); text-align: center; line-height: 60px; color: #fff; font-size: 18px; -webkit-transition: all 0.5s; transition: all 0.5s; position: relative; }
 
 .phone a { text-decoration: none; }
+
+.phone:hover .hidden-content { opacity: 1; }
+
+.phone .hidden-content { background: rgba(231, 63, 63, 0.6); line-height: 30px; -webkit-transition: all 0.5s; transition: all 0.5s; position: absolute; font-size: 15px; opacity: 0; }
 
 /*----------end-header----------*/
 /*----------main----------*/
