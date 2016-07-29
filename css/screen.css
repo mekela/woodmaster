@@ -1499,13 +1499,11 @@ select:hover, select:focus { color: #fff; background: #45bcea url(../img/icons/s
 
 .location a { display: inline-block; line-height: 0.8; border-bottom: 1px dashed #fff; font-size: 12px; text-decoration: none; }
 
-.phone { width: 180px; height: 60px; float: right; background: rgba(231, 63, 63, 0.6); text-align: center; line-height: 60px; color: #fff; font-size: 18px; -webkit-transition: all 0.5s; transition: all 0.5s; position: relative; }
+.phone { width: 180px; height: 60px; float: right; background: rgba(231, 63, 63, 0.6); text-align: center; line-height: 60px; color: #fff; font-size: 18px; position: relative; }
 
 .phone a { text-decoration: none; }
 
-.phone:hover .hidden-content { opacity: 1; }
-
-.phone .hidden-content { background: rgba(231, 63, 63, 0.6); line-height: 30px; -webkit-transition: all 0.5s; transition: all 0.5s; position: absolute; font-size: 15px; opacity: 0; }
+.phone .hidden-content { background: rgba(231, 63, 63, 0.6); line-height: 30px; position: absolute; font-size: 15px; display: none; }
 
 /*----------end-header----------*/
 /*----------main----------*/
@@ -1535,6 +1533,10 @@ select:hover, select:focus { color: #fff; background: #45bcea url(../img/icons/s
 .active_buttons a.add_star:before { content: 'Добавить в закладки (ctrl+D)'; position: absolute; right: 0px; width: 150px; height: 31px; background-color: #45bbe9; opacity: 0; line-height: 30px; font-size: 10px; text-align: center; -webkit-transition: all 0.5s; transition: all 0.5s; }
 
 .active_buttons a.add_star:hover:before { right: 30px; opacity: .9; }
+
+.active_buttons a.question:before { content: 'Задать вопрос'; position: absolute; right: 0px; width: 150px; height: 31px; background-color: #45bbe9; opacity: 0; line-height: 30px; font-size: 13px; text-align: center; -webkit-transition: all 0.5s; transition: all 0.5s; }
+
+.active_buttons a.question:hover:before { right: 30px; opacity: .9; }
 
 /*---------end-slogan-------------*/
 /*---------why-------------*/

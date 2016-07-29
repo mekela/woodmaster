@@ -22,6 +22,10 @@ $(document).ready(function() {
 	  $( ".head_menu ul" ).slideToggle( "slow");
 	});
 
+  $( ".phone > a" ).click(function() {
+    $( ".hidden-content" ).slideToggle( "slow");
+  });
+
 	 //scroll anchor
     $('.totop').on('click',function(){
 		$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top-1},800);

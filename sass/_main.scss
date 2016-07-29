@@ -121,23 +121,19 @@
 			line-height: 60px;
 			color: #fff;
 			font-size: 18px;
-			@include transition(all 0.5s);
+			//@include transition(all 0.5s);
 			position: relative;
 			a{
 				text-decoration: none;
 			}
-			&:hover{
-				.hidden-content{
-					opacity: 1;
-				}
-			}
+		
 			.hidden-content{
 				background:rgba(231,63,63, 0.6);
 				line-height: 30px;
-				@include transition(all 0.5s);
+				//@include transition(all 0.5s);
 				position: absolute;
 				font-size: 15px;
-				opacity: 0;
+				display: none;
 			}
 		}
 
@@ -230,6 +226,27 @@
 						opacity: 0;
 						line-height: 30px;
 						font-size: 10px;
+						text-align: center;
+						@include transition(all 0.5s);
+					}	
+					&:hover{
+						&:before{
+							right: 30px;
+							opacity: .9;
+						}
+					}
+				}
+				&.question{
+					&:before{
+						content: 'Задать вопрос';
+						position: absolute;
+						right: 0px;
+						width: 150px;
+						height: 31px;
+						background-color: #45bbe9;
+						opacity: 0;
+						line-height: 30px;
+						font-size: 13px;
 						text-align: center;
 						@include transition(all 0.5s);
 					}	
