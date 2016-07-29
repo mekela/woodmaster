@@ -22,6 +22,14 @@
 		.location{
 		 display: none;
 		}
+		.head_menu{
+			.phone{
+				display: inline-block;
+			}
+		}
+		.head_info{
+			display: none;
+		}
 	}
  }
  	.logo_drop{
@@ -44,6 +52,10 @@
 	}
 	.head_menu{
 		text-align: right;
+		ul{
+			display: inline-block;
+			vertical-align: top;
+		}	
 		li{
 			display: inline-block;
 			font-size: 16px;
@@ -62,6 +74,12 @@
 				}
 			}
 		}
+		.phone{
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 20px;
+			display: none;
+		}
 	}
 	.logo_menu{
 		background:rgba(255,255,255, 0.9);
@@ -70,13 +88,13 @@
 		li{
 			border-bottom: 1px solid #cccccc;
 			color: #666666;
-			font-size: 16px;
+			font-size: 14px;
 			a{
 				display: block;
 				padding: 10px 12px;
 				text-decoration: none;
 				@include transition(all 0.5s);
-				&:hover{
+				&:hover, &.active{
 					background:#45bcea url(../img/icons/menu_arrow.png) no-repeat center right 10px;
 					color: #fff;
 				}

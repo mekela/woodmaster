@@ -53,10 +53,7 @@ overflow: hidden;
   border: none;
   cursor: pointer;
   background:#f9f9f9 url(../img/icons/select_arrow.png) no-repeat center right 10px;
-  &:hover, &:focus{
-    color: #fff;
-    background:#45bcea url(../img/icons/select_arrow_white.png) no-repeat center right 10px;
-  }
+ 
 }
 //end buttons and inputs
 
