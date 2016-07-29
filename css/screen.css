@@ -1465,7 +1465,7 @@ select:hover, select:focus { color: #fff; background: #45bcea url(../img/icons/s
 
 .header.fixed_element .logo, .header.fixed_element .head_menu li, .header.fixed_element .menu_trigger { color: #666666; }
 
-.header.fixed_element .head_info { display: none; }
+.header.fixed_element .location { display: none; }
 
 .logo_drop { display: none; }
 
